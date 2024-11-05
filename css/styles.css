@@ -1,13 +1,4 @@
-/* Color Pallette */
-
-:root {
-  --color-primary: hsl(25, 97%, 53%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-light-grey: hsl(217, 12%, 63%);
-  --color-dark-blue: hsl(213, 19%, 18%);
-  --color-very-dark-blue: hsl(216, 12%, 8%);
-}
-
+/* Reset */
 
 *,
 *::after,
@@ -15,4 +6,147 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Color Pallette */
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-dark-blue: hsl(215.3, 19.5%, 17.1%);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+  --color-buttons: hsl(213.3, 19.1%, 18.4%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Body */
+
+body {
+  align-items: center;
+  background: var(--color-very-dark-blue);
+  color: var(--color-white);
+  display: flex;
+  font-family: 'Overpass', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+/* Container */
+
+.container {
+  max-width: 412px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Card */
+
+.card {
+  background: var(--color-dark-blue);
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+/* Star icon */
+
+.card__star-icon {
+  background: var(--color-buttons);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Heading */
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph */
+
+p {
+  color: var(--color-light-grey);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Rating buttons */
+
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rating-btn {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: var(--color-buttons);
+  color: var(--color-light-grey);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+
+.rating-btn:hover,
+.rating-btn.active {
+  background: var(--color-primary);
+  color: var(--color-dark-blue);
+}
+
+.submit-btn {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-very-dark-blue);
+  border: none;
+  border-radius: 22.5px;
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+
+.submit-btn:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Thank you card */
+
+.card__thank-you {
+  text-align: center;
+}
+
+.thank-you-img {
+  margin-bottom: 1.5rem;
+}
+
+.selected-rating {
+  margin-bottom: 1.5rem;
+  background: var(--color-buttons);
+  color: var(--color-primary);
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 22.5px;
+}
+
+.hidden {
+  display: none;
 }
