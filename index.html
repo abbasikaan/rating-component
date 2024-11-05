@@ -24,30 +24,23 @@
       <h1>How did we do?</h1>
       <p> Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
+      <div class="card__buttons">
+        <button class="rating-btn" data-rating="1">1</button>
+        <button class="rating-btn" data-rating="1">2</button>
+        <button class="rating-btn" data-rating="1">3</button>
+        <button class="rating-btn" data-rating="1">4</button>
+        <button class="rating-btn" data-rating="1">5</button>
+      </div>
+      <button class="rating-btn" id="ratingBtn">Submit</button>
     </div>
-    <div class="card__buttons">
-      <button class="rating-btn" data-rating="1">1</button>
-      <button class="rating-btn" data-rating="1">2</button>
-      <button class="rating-btn" data-rating="1">3</button>
-      <button class="rating-btn" data-rating="1">4</button>
-      <button class="rating-btn" data-rating="1">5</button>
+    <!-- Thank You card -->
+    <div class="card__thank-you card hidden" id="thankYouCard">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <p class="selected-rating">You selected <span id="ratingValue"></span> out of 5</p>
+      <h1>Thank You!</h1>
+      <p> We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
     </div>
-    <button class="rating-btn" id="ratingBtn">Submit</button>
-  </div>
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 
