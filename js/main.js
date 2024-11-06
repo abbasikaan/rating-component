@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const card = document.getElementById('ratingCard');
+  const ratingCard = document.getElementById('ratingCard');
   const thankYouCard = document.getElementById('thankYouCard');
   const submitBtn = document.getElementById('submitBtn');
   const ratingBtns = document.querySelectorAll('.rating-btn');
@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedRating = btn.dataset.rating;
   });
   }
-
+ 
+  submitBtn.addEventListener('click', () => {
+    if (selectedRating > 0) {
+      ratingValue.textContent = selectedRating;
+      ratingCard.classList.add('hidden');
+      thankYouCard.classList.remove('hidden');
+    }
+  });
 
 });
