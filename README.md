@@ -211,6 +211,6 @@ By focusing on these areas in my future projects, I'll continue to build on the 
 
 ## Author
 
--   Website - [Add your name here](https://www.your-site.com)
+-   Website - [Coming Soon!](https://www.your-site.com)
 -   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
--   Twitter - [@yourusername](https://www.twitter.com/yourusername)
+-   Twitter - [Not Available](https://www.twitter.com/yourusername)
