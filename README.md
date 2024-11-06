@@ -34,7 +34,25 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+-   Mobile Version
+
+![](./images/mobile.png)
+
+-   Mobile submitted version
+
+![](./images/submitted-mobile.png)
+
+-   Desktop version
+
+![](./images/desktop.png)
+
+-   Desktop hover state
+
+![](./images/desktop-hover.png)
+
+-   Desktop submitted version
+
+![](./images/desktop-submit.png)
 
 ### Links
 
